@@ -1,0 +1,17 @@
+html {
+  background-color: white;
+}
+
+header {
+  background-image: linear-gradient(9deg, rgba(36, 19, 0, 0.2) 0%, rgba(113, 113, 113, 0.2) 11%, rgba(255, 0, 0, 0.2) 100%), url(/assets/images/header-sushi.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .titre-principal {
+  position: absolute;
+  top: 30%;
+}
+/*# sourceMappingURL=style.css.map */
