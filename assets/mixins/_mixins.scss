@@ -1,12 +1,28 @@
 @mixin font-principal {
-    font-family: 'Merienda One', cursive; 
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    word-spacing: 5px;
+  font-family: "Merienda One", cursive;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 5px;
 }
 
 @mixin font-secondaire {
-    font-family: 'Merienda', cursive;
-    color: white
+  font-family: "Merienda", cursive;
+  color: white;
+}
+
+@mixin titre-h2 {
+  font-family: "Merienda", cursive;
+  color: black;
+  font-size: 280%;
+  text-align: center;
+  
+  &::after {
+    display: block;
+    height: 2px;
+    background-color: black;
+    width: 180px;
+    content: " ";
+    margin: 10px auto;
+  }
 }

@@ -1,12 +1,33 @@
 @import "./assets/variables/variables";
 @import "./assets/mixins/mixins";
 
-*{
+* {
   font-family: $font-secondaire;
 }
 
 html {
   background-color: white;
+}
+
+h2 {
+  @include titre-h2;
+}
+
+h3,
+h4 {
+  @include font-secondaire;
+  color: black;
+  font-size: 160%;
+}
+
+p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+section {
+  padding: 30px 0 60px 0;
 }
 
 // ************************** HEADER **************************
@@ -33,7 +54,7 @@ header {
     @include font-principal;
     font-size: 450%;
 
-    span{
+    span {
       font-weight: 700;
       border: 2px solid white;
       border-radius: 30px;
@@ -41,38 +62,103 @@ header {
     }
   }
 
-  p{
+  p {
     @include font-secondaire;
     font-size: 180%;
-
+    margin: 15px 0;
   }
 }
 
 // ************************** BOUTONS **************************
 
-.btn{
+.btn {
   display: inline-block;
   padding: 10px 30px;
+  margin-top: 15px;
   transition: background-color 1s, color 1s, border 1s;
 }
 
-.btn-full{
+.btn-full {
   background-color: white;
   margin-right: 20px;
 
-  &:hover{
+  &:hover {
     background-color: black;
     color: white;
   }
 }
 
-.btn-ghots{
+.btn-ghots {
   border: 1px solid white;
   color: white;
 
-  &:hover{
+  &:hover {
     border: 1px solid black;
     background-color: black;
     color: white;
   }
+}
+
+// ************************** SECTION CHOIX **************************
+
+.choix h2 {
+  margin: 40px 0;
+}
+
+.section1-photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.section1-choix {
+  margin: 20px 0;
+
+  &:hover .icons {
+    transform: translateX(20px);
+  }
+}
+
+.icons img {
+  width: 50px;
+}
+
+.icons {
+  transition: all 1s;
+}
+
+// ************************** SECTION FAMILLES **************************
+
+.familles {
+  background-color: black;
+
+  h2 {
+    margin: 40px 0;
+    color: white;
+
+    &::after {
+      background-color: white;
+    }
+  }
+}
+
+.familles-details {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px lightgray;
+}
+
+.familles-details img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.familles-details h4 {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.familles-details p {
+  margin: 0;
 }
