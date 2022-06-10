@@ -11,6 +11,7 @@ h2 {
   color: black;
   font-size: 280%;
   text-align: center;
+  margin: 40px 0;
 }
 
 h2::after {
@@ -105,10 +106,6 @@ header {
   color: white;
 }
 
-.choix h2 {
-  margin: 40px 0;
-}
-
 .section1-photo {
   max-width: 100%;
   height: auto;
@@ -128,8 +125,8 @@ header {
 }
 
 .icons {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .familles {
@@ -166,5 +163,52 @@ header {
 
 .familles-details p {
   margin: 0;
+}
+
+.galeries-img {
+  height: 300px;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.728);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.728);
+  margin-bottom: 50px;
+}
+
+.avis {
+  background-color: black;
+}
+
+.avis h2 {
+  margin: 40px 0;
+  color: white;
+}
+
+.avis h2::after {
+  background-color: white;
+}
+
+blockquote {
+  padding: 5px;
+  font-style: italic;
+  line-height: 130%;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.361);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+cite {
+  font-size: 90%;
+  display: block;
+  margin-top: 20px;
+}
+
+cite img {
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
