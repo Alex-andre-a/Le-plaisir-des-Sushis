@@ -1,5 +1,9 @@
-@import "/assets/variables/variables";
-@import "/assets/mixins/";
+@import "./assets/variables/variables";
+@import "./assets/mixins/mixins";
+
+*{
+  font-family: $font-secondaire;
+}
 
 html {
   background-color: white;
@@ -19,13 +23,56 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
-  .titre-principal {
-    position: absolute;
-    top: 30%;
+.titre-principal {
+  position: absolute;
+  top: 15%;
+
+  h1 {
+    @include font-principal;
+    font-size: 450%;
+
+    span{
+      font-weight: 700;
+      border: 2px solid white;
+      border-radius: 30px;
+      padding: 5px 10px;
+    }
+  }
+
+  p{
+    @include font-secondaire;
+    font-size: 180%;
+
   }
 }
 
-.titre-principal h1 {
-  font-family: $font-principal;
+// ************************** BOUTONS **************************
+
+.btn{
+  display: inline-block;
+  padding: 10px 30px;
+  transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn-full{
+  background-color: white;
+  margin-right: 20px;
+
+  &:hover{
+    background-color: black;
+    color: white;
+  }
+}
+
+.btn-ghots{
+  border: 1px solid white;
+  color: white;
+
+  &:hover{
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+  }
 }

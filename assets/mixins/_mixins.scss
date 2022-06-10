@@ -1,0 +1,12 @@
+@mixin font-principal {
+    font-family: 'Merienda One', cursive; 
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
+@mixin font-secondaire {
+    font-family: 'Merienda', cursive;
+    color: white
+}
